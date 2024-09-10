@@ -1,3 +1,5 @@
+-- RUSH ONLY, MORE ENTITIES COMING SOON FATTY
+
 function Rush()
     repeat wait() until workspace.RushMoving
     if workspace.RushMoving then
