@@ -1,4 +1,4 @@
--- RUSH ONLY, MORE ENTITIES COMING SOON FATTY
+-- RUSH ONLY, MORE ENTITIES COMING SOON FATTY Sigma
 
 function Rush()
     local rush = workspace.RushMoving
