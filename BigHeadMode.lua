@@ -1,15 +1,10 @@
 -- RUSH ONLY, MORE ENTITIES COMING SOON FATTY Sigma
 
-function Rush()
-    local rush = workspace.RushMoving
-    local face = rush.RushNew.Attachment.ParticleEmitter
-    local trail = rush.Rushnew.Attachment.BlackTrail
-    face.Texture = "rbxassetid://3031362207"
-    trail.Color = Color3.new(1.000000, 1.000000, 0.000000)
-end
+workspace.ChildAdded:Connect(function(v)
+    if v.Name == "RushMoving" then
+        v:WaitForChild("RushNew", 9e9):WaitForChild("Attachment", 9e9)
 
-game:GetService("RunService").RenderStepped:Connect(function()
-    if workspace:WaitForChild("RushMoving") then
-        Rush()
+        v.RushNew.Attachment.ParticleEmitter.Texture = "rbxassetid://3031362207"
+        v.Rushnew.Attachment.BlackTrail.Color = Color3.new(1, 1, 0)
     end
 end)
