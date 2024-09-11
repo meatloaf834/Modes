@@ -1,4 +1,6 @@
--- RUSH ONLY, MORE ENTITIES COMING SOON FATTY Sigma
+-- RUSH ONLY, MORE ENTITIES COMING SOON FATTY
+
+-- Test
 
 workspace.ChildAdded:Connect(function(v)
     if v.Name == "RushMoving" then
